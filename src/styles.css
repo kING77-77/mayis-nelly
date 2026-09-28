@@ -158,3 +158,18 @@ button:hover, button:active {
   color: var(--color-bg-dark);
   box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
 }
+
+/* Hide Netlify Badge & Netlify Drawer */
+netlify-drawer,
+#netlify-drawer,
+.netlify-drawer,
+[data-netlify-drawer],
+iframe[src*="netlify"],
+div[class*="netlify-feedback"],
+div[id*="netlify-badge"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
