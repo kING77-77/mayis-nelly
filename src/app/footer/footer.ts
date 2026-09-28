@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
         
         <div class="divider"></div>
         
-        <p class="couple-names">Մայիս և Նելլի</p>
+        <p class="couple-names">Արամայիս և Նելլի</p>
         <p class="wedding-date">10 . 10 . 2026</p>
       </div>
     </footer>
@@ -78,4 +78,4 @@ import { Component } from '@angular/core';
     }
   `]
 })
-export class Footer {}
+export class Footer { }

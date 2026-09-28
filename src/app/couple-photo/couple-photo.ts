@@ -13,7 +13,7 @@ import { Component, ElementRef, OnInit } from '@angular/core';
         <div class="photo-decoration bottom-right"></div>
       </div>
       <div class="quote-container scroll-reveal delay-2 mt-8 text-center">
-        <p class="quote-text text-gold">Ձեզ հետ բերեք ՍԵՐ, ժպիտներ ու անսահման դրական էմոցիաներ, ինչպես նաև հարմարավետ կոշիկներ՝ պարելու համար։</p>
+        <p class="quote-text text-gold">Ձեզ հետ բերեք ՍԵՐ, ժպիտներ ու անսահման դրական էմոցիաներ:</p>
 
       </div>
     </section>
