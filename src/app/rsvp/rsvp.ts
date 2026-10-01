@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
         <h2 class="title-elegant text-gold mb-2" style="font-size: clamp(2rem, 4vw, 3rem);">Հարցաթերթիկ</h2>
      
         <p class="text-muted mb-8" style="font-size: 0.9rem; line-height: 1.6;">
-          Խնդրում ենք հաստատել Ձեր ներկայությունը մինչև հունիսի 24-ը: <br/>
+          Խնդրում ենք հաստատել Ձեր ներկայությունը մինչև Հոկտեմբերի 5։ <br/>
 
         </p>
 
@@ -183,11 +183,11 @@ export class Rsvp implements OnInit {
   name: string = '';
   surname: string = '';
   guests: number = 1;
-  
+
   isSending: boolean = false;
   successMessage: boolean = false;
 
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef) { }
 
   ngOnInit() {
     this.setupScrollAnimation();
@@ -228,7 +228,7 @@ export class Rsvp implements OnInit {
   send(event: Event) {
     event.preventDefault();
     if (!this.name || !this.surname) return;
-    
+
     this.isSending = true;
 
     const payload = {
@@ -250,26 +250,26 @@ export class Rsvp implements OnInit {
       },
       body: JSON.stringify(payload)
     })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`Backend responded with status ${response.status}`);
-      }
-      return response.json();
-    })
-    .then(() => {
-      this.isSending = false;
-      this.successMessage = true;
-      alert("Շնորհակալություն! Ձեր պատասխանն ուղարկված է:");
-      
-      // Reset form fields
-      this.name = '';
-      this.surname = '';
-      this.guests = 1;
-    })
-    .catch(err => {
-      console.error('Error sending RSVP via backend:', err);
-      this.isSending = false;
-      alert('Ուղարկման սխալ: Խնդրում ենք կրկին փորձել:');
-    });
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Backend responded with status ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(() => {
+        this.isSending = false;
+        this.successMessage = true;
+        alert("Շնորհակալություն! Ձեր պատասխանն ուղարկված է:");
+
+        // Reset form fields
+        this.name = '';
+        this.surname = '';
+        this.guests = 1;
+      })
+      .catch(err => {
+        console.error('Error sending RSVP via backend:', err);
+        this.isSending = false;
+        alert('Ուղարկման սխալ: Խնդրում ենք կրկին փորձել:');
+      });
   }
 }

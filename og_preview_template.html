@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Armenian:wght@300;400;500;600;700&family=Cinzel:wght@400;600;700&family=Alex+Brush&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background-color: #0a0a0c;
+    }
+    .preview-card {
+      width: 1200px;
+      height: 630px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: url('file:///C:/Users/Marat/.gemini/antigravity-ide/brain/1a89a756-3a52-4991-ad54-2ebad5a4b9b5/wedding_og_bg_1790621677343.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at center, rgba(10, 10, 12, 0.45) 0%, rgba(10, 10, 12, 0.75) 100%);
+      z-index: 1;
+    }
+    .content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 40px 60px;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .invitation-badge {
+      font-family: 'Cinzel', 'Noto Serif Armenian', 'Sylfaen', serif;
+      font-size: 19px;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: #dfba6a;
+      margin-bottom: 22px;
+      opacity: 0.95;
+      text-shadow: 0 0 15px rgba(223, 186, 106, 0.5);
+    }
+    .couple-title {
+      font-family: 'Noto Serif Armenian', 'Sylfaen', serif;
+      font-size: 68px;
+      font-weight: 600;
+      line-height: 1.25;
+      letter-spacing: 0.04em;
+      background: linear-gradient(135deg, #fff7d9 0%, #f3e5ab 25%, #d4af37 60%, #aa8010 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.9)) drop-shadow(0 0 25px rgba(212, 175, 55, 0.3));
+      margin-bottom: 20px;
+    }
+    .gold-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 26px;
+      width: 100%;
+    }
+    .gold-line {
+      height: 1.5px;
+      width: 140px;
+      background: linear-gradient(90deg, transparent, #d4af37, #f3e5ab, transparent);
+    }
+    .gold-diamond {
+      width: 8px;
+      height: 8px;
+      background: #f3e5ab;
+      transform: rotate(45deg);
+      box-shadow: 0 0 10px #d4af37;
+    }
+    .subtitle {
+      font-family: 'Noto Serif Armenian', 'Sylfaen', serif;
+      font-size: 32px;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      color: rgba(255, 255, 255, 0.92);
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 15px rgba(212, 175, 55, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-card">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="invitation-badge">ՀԱՐՍԱՆԵԿԱՆ ՀՐԱՎԵՐ</div>
+      <h1 class="couple-title">Արամայիս և Նելլի</h1>
+      <div class="gold-divider">
+        <div class="gold-line"></div>
+        <div class="gold-diamond"></div>
+        <div class="gold-line"></div>
+      </div>
+      <p class="subtitle">Սիրով սպասում ենք բոլորիդ</p>
+    </div>
+  </div>
+</body>
+</html>
