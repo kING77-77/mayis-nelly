@@ -33,7 +33,7 @@ import { CommonModule } from '@angular/common';
           <div class="timeline-item scroll-reveal delay-2">
             <div class="timeline-dot"></div>
             <div class="timeline-content left-side">
-              <div class="timeline-time text-gold">13։30</div>
+              <div class="timeline-time text-gold">13։00</div>
               <h4>Պսակադրություն</h4>
               <p class="text-muted">Սուրբ էջմիածին եկեղեցի
             </div>
@@ -43,7 +43,7 @@ import { CommonModule } from '@angular/common';
           <div class="timeline-item scroll-reveal delay-4">
             <div class="timeline-dot"></div>
             <div class="timeline-content left-side">
-              <div class="timeline-time text-gold">17:30</div>
+              <div class="timeline-time text-gold">18:00</div>
               <h4>Հարսանեկան խնջույք</h4>
               <p class="text-muted">Ռեստորան "Fishery, Golden fish", հասցե՝ Բոլնիս խաչեն </p>
             </div>
@@ -251,9 +251,9 @@ import { CommonModule } from '@angular/common';
   `]
 })
 export class Info implements OnInit {
-  days = Array.from({length: 30}, (_, i) => i + 1);
+  days = Array.from({ length: 30 }, (_, i) => i + 1);
 
-  constructor(private el: ElementRef) {}
+  constructor(private el: ElementRef) { }
 
   ngOnInit() {
     this.setupScrollAnimation();
